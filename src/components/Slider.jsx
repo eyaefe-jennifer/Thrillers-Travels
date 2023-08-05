@@ -25,17 +25,17 @@ const Slider = ({ images }) => {
         key={currentIndex}
         src={images[currentIndex]}
         alt=""
-        className="rounded-lg"
+        className="rounded-lg w-80 sm:w-auto ml-10 sm:ml-0"
       />
       <div className="flex justify-between">
         <div
-          className=" bg-dark-gray rounded-md h-6 w-6 absolute top-24 bottom-20  mt-10 mb-0"
+          className=" bg-dark-gray rounded-md h-6 w-6 absolute top-24 bottom-20  mt-10 mb-0 right-[370px] sm:right-auto"
           onClick={handlePrevious}
         >
           <BiChevronLeft fontSize={24} />
         </div>
         <div
-          className=" bg-dark-gray rounded-md h-6 w-6 absolute top-32 mt-3 ml-10 left-96"
+          className=" bg-dark-gray rounded-md h-6 w-6 absolute top-32 mt-3 ml-10 left-[300px] sm:left-96"
           onClick={handleNext}
         >
           <BiChevronRight fontSize={24} />
